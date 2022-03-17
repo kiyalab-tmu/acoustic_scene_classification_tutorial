@@ -140,11 +140,11 @@ if __name__ == '__main__':
 
 
 
-    print('######Train######')
+    print('======Train======')
     do_create_feature(df=train_df, data_type='train')
-    print('######Valid######')
+    print('======Valid======')
     do_create_feature(df=valid_df, data_type='valid')
-    print('######Test######')
+    print('======Test======')
     do_create_feature(df=test_df, data_type='test')
     
 
