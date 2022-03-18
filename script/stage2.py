@@ -340,7 +340,7 @@ def do_finish(train_loss, train_acc, valid_loss, valid_acc, test_loss, test_acc,
         f.write('\n\n\n\n\n=====実際のコード=====\n\n\n\n')
         f.write(code_contents)
     print('=====All information is saved !=====')
-    print(ex_name)
+    print('今回の実験ID', ex_name)
 
     
        
@@ -368,6 +368,7 @@ if __name__ == '__main__':
     # ====
     # 学習
     # ====
+    prev_metric = None
     for epoch in range(1, epoch_num + 1):
         train_loss, train_acc = train(model, device, train_loader, optimizer, epoch, epoch_num)
         loss_history.append(train_loss)
