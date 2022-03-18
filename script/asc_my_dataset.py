@@ -9,7 +9,6 @@ import pickle
 import glob
 import torch
 import numpy as np
-from tensorflow.python.ops.gen_linalg_ops import self_adjoint_eig
 from torch.utils.data import Dataset
 from torchvision import transforms
 
